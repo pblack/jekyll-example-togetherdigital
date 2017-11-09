@@ -4,7 +4,8 @@ layout: default
 {% for blok in page.story.content.body %}
   {% include {{blok.component}}.html blok=blok %}
 {% endfor %}
-<script type='javascript'>
+<script src="//app.storyblok.com/storyblok-latest.js" type="text/javascript"></script>
+<script type='text/javascript'>
 storyblok.init({
    accessToken: 'tAvUo0402z67zWLZLrekyQtt'
  });
