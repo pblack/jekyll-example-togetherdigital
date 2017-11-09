@@ -4,7 +4,7 @@ layout: default
 {% for blok in page.story.content.body %}
   {% include {{blok.component}}.html blok=blok %}
 {% endfor %}
-
+<script type='javascript'>
 storyblok.init({
    accessToken: 'tAvUo0402z67zWLZLrekyQtt'
  });
@@ -18,3 +18,4 @@ storyblok.init({
      storyblok.enterEditmode();
    }
  });
+</script>
