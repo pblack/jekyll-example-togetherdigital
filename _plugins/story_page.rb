@@ -21,7 +21,7 @@ module Jekyll
     safe true
 
     def generate(site)
-      client = ::Storyblok::Client.new(token: 'e9ZTVJwikslzTr2iJbhqDAtt', version: 'draft')
+      client = ::Storyblok::Client.new(token: 'tAvUo0402z67zWLZLrekyQtt', version: 'draft')
       res = client.stories
       stories = res['data']['stories']
 
