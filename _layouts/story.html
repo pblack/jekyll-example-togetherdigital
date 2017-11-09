@@ -4,3 +4,17 @@ layout: default
 {% for blok in page.story.content.body %}
   {% include {{blok.component}}.html blok=blok %}
 {% endfor %}
+
+storyblok.init({
+   accessToken: 'tAvUo0402z67zWLZLrekyQtt'
+ });
+
+ storyblok.on('change', function() {
+   location.reload(true);
+ });
+
+ storyblok.pingEditor(function() {
+   if (storyblok.inEditor) {
+     storyblok.enterEditmode();
+   }
+ });
